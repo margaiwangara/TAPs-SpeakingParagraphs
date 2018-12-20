@@ -1,0 +1,25 @@
+body {
+  overflow-x: hidden;
+  max-width: 100%; }
+
+#mini-navbar {
+  border-top: 2px #000040 solid;
+  border-bottom: 2px #000040 solid; }
+  #mini-navbar .mini-navbar-inner ul {
+    padding: 0;
+    margin: 0; }
+  #mini-navbar .mini-navbar-inner ul > li {
+    display: inline;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-right: 1px #000040 solid; }
+  #mini-navbar .mini-navbar-inner ul > li > a {
+    text-decoration: none;
+    color: #000040; }
+
+#header-section ul > li {
+  list-style: none;
+  padding: 10px 5px 10px 5px; }
