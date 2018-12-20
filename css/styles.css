@@ -13,6 +13,9 @@ body {
     padding-top: 20px; }
   #home-carousel-section .carousel-item {
     height: 500px; }
+  #home-carousel-section .carousel-caption {
+    text-align: left;
+    color: #000; }
   #home-carousel-section .slide-image-1 {
     background: url("../img/slide-image-3.jpg");
     background-size: cover; }
@@ -25,6 +28,13 @@ body {
   #home-carousel-section .slide-image-4 {
     background: url("../img/slide-image-3.jpg");
     background-size: cover; }
+
+#content-display {
+  padding-top: 30px; }
+  #content-display .card-deck img {
+    height: 170px; }
+  #content-display .card-deck a {
+    text-decoration: none; }
 
 #mini-navbar {
   border-top: 2px #000040 solid;

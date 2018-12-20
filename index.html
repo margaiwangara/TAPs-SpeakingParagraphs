@@ -72,7 +72,7 @@
       <div class="home-carousel-inner">
         <div class="row">
           <div class="col">
-            <div class="carousel slide" data-ride="carousel" id="latest-carousel">
+            <div class="carousel slide" data-ride="carousel" id="latestCarousel">
               <div class="carousel-inner">
                 <div class="carousel-item active slide-image-1">
                   <div class="carousel-caption">
@@ -108,39 +108,11 @@
                 </div>
               </div>
 
-              <ul class="nav nav-pills nav-justified">
-                <li class="active nav-item" data-slide-to="0" data-target="#latest-carousel">
-                  <a href="#" class="nav-link active">
-                    Photography
-                    <p class="small">
-                      Lorem ipsum dolor sit amet.
-                    </p>
-                  </a>
-                </li>
-                <li class="nav-item" data-target="latest-carousel" data-slide-to="1">
-                  <a href="#" class="nav-link">
-                    Technology
-                    <p class="small">
-                      Lorem ipsum dolor sit amet.
-                    </p>
-                  </a>
-                </li>
-                <li class="nav-item" data-target="latest-carousel" data-slide-to="2">
-                  <a href="#" class="nav-link">
-                    Health
-                    <p class="small">
-                      Lorem ipsum dolor sit amet.
-                    </p>
-                  </a>
-                </li>
-                <li class="nav-item" data-target="latest-carousel" data-slide-to="3">
-                  <a href="#" class="nav-link">
-                    Lifestyle
-                    <p class="small">
-                      Lorem ipsum dolor sit amet.
-                    </p>
-                  </a>
-                </li>
+              <ul class="carousel-indicators">
+                <li class="active" data-target="#latestCarousel" data-slide-to="0"></li>
+                <li data-target="#latestCarousel" data-slide-to="1"></li>
+                <li data-target="#latestCarousel" data-slide-to="2"></li>
+                <li data-target="#latestCarousel" data-slide-to="3"></li>
               </ul>
             </div>
           </div>
@@ -148,18 +120,114 @@
       </div>
     </section>
 
-    <section id="content-display" class="bg-light">
-      <div class="content-display-inner p-3 mx-3">
+    <section id="content-display" class="bg-light mb-4">
+      <div class="container content-display-inner">
         <div class="row">
           <div class="col">
-            <div class="card-decks">
-              <h3 class="display-5 py-2 border-bottom mb-3 text-capitalize">show data</h3>
-            </div>
+              <ul class="nav nav-tabs text-capitalize">
+                <li class="nav-item">
+                  <a href="#trending" class="nav-link active" data-toggle="tab">trending</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#new" class="nav-link" data-toggle="tab">new</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#popular" class="nav-link" data-toggle="tab">popular</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#oftheday" class="nav-link" data-toggle="tab">of the day</a>
+                </li>
+              </ul>
+
+              <!-- tabbed data -->
+              <div class="tab-content py-2 my-4">
+                <div class="tab-pane container active" id="trending">
+                  <div class="card-deck">
+                    <div class="card">
+                      <img src="img/slide-image-1.jpg" alt="blog-image-1" class="img-fluid rounded">
+                      <div class="card-body">
+                        <h3 class="h5">
+                          <a href="#">Heading One</a>
+                        </h3>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos ea consectetur ipsa sunt qui quis!<br>
+                          <span class="small text-muted">
+                            <i class="far fa-calendar-alt"></i> 10th Dec 2018 at 10:15pm<br>
+                            <i class="fas fa-user"></i> thenerdhimself
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="img/slide-image-2.jpg" alt="blog-image-1" class="img-fluid rounded">
+                      <div class="card-body">
+                        <h3 class="h5">
+                          <a href="#">Heading Two</a>
+                        </h3>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos ea consectetur ipsa sunt qui quis!<br>
+                          <span class="small text-muted">
+                            <i class="far fa-calendar-alt"></i> 11th Dec 2018 at 10:15pm<br>
+                            <i class="fas fa-user"></i> thenerdhimself
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="img/slide-image-3.jpg" alt="blog-image-1" class="img-fluid rounded">
+                      <div class="card-body">
+                        <h3 class="h5">
+                          <a href="#">Heading Three</a>
+                        </h3>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos ea consectetur ipsa sunt qui quis!<br>
+                          <span class="small text-muted">
+                            <i class="far fa-calendar-alt"></i> 12th Dec 2018 at 10:15pm<br>
+                            <i class="fas fa-user"></i> thenerdhimself
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="img/slide-image-4.jpg" alt="blog-image-1" class="img-fluid rounded">
+                      <div class="card-body">
+                        <h3 class="h5">
+                          <a href="#">Heading Four</a>
+                        </h3>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos ea consectetur ipsa sunt qui quis!<br>
+                          <span class="small text-muted py-2">
+                            <i class="far fa-calendar-alt"></i> 13th Dec 2018 at 10:15pm<br>
+                            <i class="fas fa-user"></i> thenerdhimself
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane container fade" id="new">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, laboriosam?
+                </div>
+                <div class="tab-pane container fade" id="popular">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam odio quasi voluptatibus temporibus ipsa? Eum non odio earum, vel rerum laboriosam ea obcaecati, distinctio, fugiat ratione commodi laudantium ducimus quam.
+                </div>
+                <div class="tab-pane container fade" id="oftheday">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius dolorem rem commodi omnis dolore totam beatae doloremque, officia ipsum aliquid veritatis harum blanditiis modi et eligendi temporibus? Praesentium vitae velit laudantium earum quas, vero nemo quaerat impedit ex, laboriosam unde!
+                </div>
+              </div>
           </div>
         </div>
       </div>
     </section>
-
+    <footer id="sp-footer">
+      <div class="row">
+        <div class="col">
+          <h5 class="text-center h6 pb-2 font-weight-normal">
+            &copy;<span id="year" class="px-2"></span>| The Amber Group of Projects
+          </h5>
+        </div>
+      </div>
+    </footer>
     <!-- Scripts -->
     <!-- Bootstrap and JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

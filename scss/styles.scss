@@ -20,6 +20,10 @@ body{
     height: 500px;
   }
 
+  .carousel-caption{
+    text-align: left;
+    color: #000;
+  }
   .slide-image-1{
     background: url("../img/slide-image-3.jpg");
     background-size: cover;
@@ -41,6 +45,20 @@ body{
   }
 }
 
+#content-display{
+  padding-top: 30px;
+  .content-display-inner{
+  }
+
+  .card-deck{
+    img{
+      height: 170px;
+    }
+    a{
+      text-decoration: none;
+    }
+  }
+}
 
 
 
