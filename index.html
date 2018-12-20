@@ -23,7 +23,7 @@
     <title>SpeakingParagraphs | Home</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm navbar-light bg-light py-2">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light py-4 fixed-top">
       <div class="container">
         <a href="#" class="navbar-brand">SpeakingParagraphs</a>
 
@@ -68,110 +68,78 @@
       </div>
     </nav>
 
-    <section id="mini-navbar">
-      <div class="mini-navbar-inner px-2">
+    <section id="home-carousel-section">
+      <div class="home-carousel-inner">
         <div class="row">
-          <div class="col-lg-2 d-none d-lg-block bg-info">
-            <h3 class="h4 text-uppercase text-center">
-              trending
-            </h3>
-          </div>
-          <div class="col-lg-8">
-              <p class="text-center align-items-center">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dicta!
-              </p>
-          </div>
-          <div class="col-lg-2">
-            <div class="social-media-icons p-2">
-              <ul class="social-media-list">
-                <li>
-                  <a href="#">
-                    <i class="fab fa-facebook-f"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fab fa-tumblr"></i>
-                  </a>
-                </li>
-                <li class="border-right-0">
-                  <a href="#">
-                    <i class="fab fa-pinterest-p"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="header-section">
-      <div class="inner-header-section">
-        <div class="row">
-          <div class="col-lg-8 p-2">
-            <div class="carousel slide" data-ride="carousel" id="header-carousel">
-              <ul class="carousel-indicators">
-                <li class="active" data-slide-to="0" data-target="#header-carousel"></li>
-                <li data-slide-to="1" data-target="#header-carousel"></li>
-                <li data-slide-to="2" data-target="#header-carousel"></li>
-                <li data-slide-to="3" data-target="#header-carousel"></li>
-                <li data-slide-to="4" data-target="#header-carousel"></li>
-              </ul>
-
+          <div class="col">
+            <div class="carousel slide" data-ride="carousel" id="latest-carousel">
               <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="img/slide-image-1.jpg" alt="slide-image-1" class="img-fluid">
+                <div class="carousel-item active slide-image-1">
+                  <div class="carousel-caption">
+                    <h3 class="display-4">Caption One</h3>
+                    <p class="lead">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente praesentium, autem necessitatibus. Sed reprehenderit numquam, molestias nisi quasi commodi eveniet.
+                    </p>
+                  </div>
                 </div>
-                <div class="carousel-item">
-                  <img src="img/slide-image-2.jpg" alt="slide-image-2" class="img-fluid">
+                <div class="carousel-item slide-image-2">
+                  <div class="carousel-caption">
+                    <h3 class="display-4">Caption Two</h3>
+                    <p class="lead">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente praesentium, autem necessitatibus. Sed reprehenderit numquam, molestias nisi quasi commodi eveniet.
+                    </p>
+                  </div>
                 </div>
-                <div class="carousel-item">
-                  <img src="img/slide-image-3.jpg" alt="slide-image-3" class="img-fluid">
+                <div class="carousel-item slide-image-3">
+                  <div class="carousel-caption">
+                    <h3 class="display-4">Caption Three</h3>
+                    <p class="lead">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente praesentium, autem necessitatibus. Sed reprehenderit numquam, molestias nisi quasi commodi eveniet.
+                    </p>
+                  </div>
                 </div>
-                <div class="carousel-item">
-                  <img src="img/slide-image-4.jpg" alt="slide-image-4" class="img-fluid">
-                </div>
-                <div class="carousel-item">
-                  <img src="img/slide-image-5.jpg" alt="slide-image-5" class="img-fluid">
+                <div class="carousel-item slide-image-4">
+                  <div class="carousel-caption">
+                    <h3 class="display-4">Caption Four</h3>
+                    <p class="lead">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente praesentium, autem necessitatibus. Sed reprehenderit numquam, molestias nisi quasi commodi eveniet.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="d-flex flex-row">
 
-              <ul class="list-style-none">
-                <li class="border-bottom text-uppercase text-center">
-                  <h3 class="display-5">latest stories</h3>
+              <ul class="nav nav-pills nav-justified">
+                <li class="active nav-item" data-slide-to="0" data-target="#latest-carousel">
+                  <a href="#" class="nav-link active">
+                    Photography
+                    <p class="small">
+                      Lorem ipsum dolor sit amet.
+                    </p>
+                  </a>
                 </li>
-                <li class="border-bottom">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium error in molestias tempora iusto, sed!
+                <li class="nav-item" data-target="latest-carousel" data-slide-to="1">
+                  <a href="#" class="nav-link">
+                    Technology
+                    <p class="small">
+                      Lorem ipsum dolor sit amet.
+                    </p>
+                  </a>
                 </li>
-                <li class="border-bottom">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium error in molestias tempora iusto, sed!
+                <li class="nav-item" data-target="latest-carousel" data-slide-to="2">
+                  <a href="#" class="nav-link">
+                    Health
+                    <p class="small">
+                      Lorem ipsum dolor sit amet.
+                    </p>
+                  </a>
                 </li>
-                <li class="border-bottom">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium error in molestias tempora iusto, sed!
-                </li>
-                <li class="border-bottom">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium error in molestias tempora iusto, sed!
-                </li>
-                <li class="border-bottom">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium error in molestias tempora iusto, sed!
-                </li>
-                <li>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium error in molestias tempora iusto, sed!
+                <li class="nav-item" data-target="latest-carousel" data-slide-to="3">
+                  <a href="#" class="nav-link">
+                    Lifestyle
+                    <p class="small">
+                      Lorem ipsum dolor sit amet.
+                    </p>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -179,6 +147,19 @@
         </div>
       </div>
     </section>
+
+    <section id="content-display" class="bg-light">
+      <div class="content-display-inner p-3 mx-3">
+        <div class="row">
+          <div class="col">
+            <div class="card-decks">
+              <h3 class="display-5 py-2 border-bottom mb-3 text-capitalize">show data</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Scripts -->
     <!-- Bootstrap and JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

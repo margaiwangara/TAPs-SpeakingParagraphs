@@ -1,7 +1,75 @@
 body{
   overflow-x: hidden;
   max-width: 100%;
+  background: #DCDCDC;
 }
+
+.navbar{
+  border-bottom: 3px solid #191970;
+}
+
+#home-carousel-section{
+  height: 500px;
+  width: 100%;
+
+  .home-carousel-inner{
+    padding-top: 20px;
+  }
+
+  .carousel-item{
+    height: 500px;
+  }
+
+  .slide-image-1{
+    background: url("../img/slide-image-3.jpg");
+    background-size: cover;
+  }
+
+  .slide-image-2{
+    background: url("../img/slide-image-3.jpg");
+    background-size: cover;
+  }
+
+  .slide-image-3{
+    background: url("../img/slide-image-3.jpg");
+    background-size: cover;
+  }
+
+  .slide-image-4{
+    background: url("../img/slide-image-3.jpg");
+    background-size: cover;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #mini-navbar{
   border-top: 2px #000040 solid;
@@ -29,8 +97,33 @@ body{
 }
 
 #header-section{
-  ul > li{
-    list-style: none;
-    padding: 10px 5px 10px 5px;
+  min-height: 500px;
+  max-width: 100%;
+
+  .inner-header-section{
+    .carousel-item{
+      height: 500px;
+    }
+
+    .image-container-1{
+      background: url("../img/slide-image-1.jpg");
+      background: cover;
+    }
+    .image-container-2{
+      background: url("../img/slide-image-2.jpg");
+      background: cover;
+    }
+    .image-container-3{
+      background: url("../img/slide-image-3.jpg");
+      background: cover;
+    }
+    .image-container-4{
+      background: url("../img/slide-image-4.jpg");
+      background: cover;
+    }
+    .image-container-5{
+      background: url("../img/slide-image-5.jpg");
+      background: cover;
+    }
   }
 }
