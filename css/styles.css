@@ -31,10 +31,11 @@ body {
 
 #content-display {
   padding-top: 30px; }
-  #content-display .card-deck img {
-    height: 170px; }
-  #content-display .card-deck a {
+  #content-display .card-columns a {
     text-decoration: none; }
+
+footer {
+  background: #e9ecef; }
 
 #mini-navbar {
   border-top: 2px #000040 solid;
