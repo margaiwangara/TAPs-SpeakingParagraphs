@@ -12,7 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
   //api data
   apiData = {
     'title':[],
-    'releaseDate':[]
+    'releaseDate':[],
+    'id':[]
   };
 
   //sort data
@@ -58,16 +59,18 @@ document.addEventListener('DOMContentLoaded', () => {
           //reset api data to empty array
           apiData.title = [];
           apiData.releaseDate = [];
+          apiData.id = [];
 
           data.results.forEach((value, key) => {
             apiData.title.push(value['title']);
             apiData.releaseDate.push(value['release_date'].substring(0, value['release_date'].indexOf("-")));
+            apiData.id.push(value['id']);
 
           });
 
           for(var z = 0; z < apiData.title.length;z++){
             if(apiData.title[z].toLowerCase().startsWith(input)){
-              $('.dropdown').append("".concat("<div class='dropdown-content'>", apiData.title[z], "(", apiData.releaseDate[z], ")","</div>"));
+              $('.dropdown').append("".concat("<div class='dropdown-content' data-movie-id='", apiData.id[z],"'>", apiData.title[z], "(", apiData.releaseDate[z], ")","</div>"));
             }
           }
         },
@@ -91,9 +94,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     });
 
-    var myData = "2015-12-25";
-
-    console.log(myData.substring(0, myData.indexOf("-")));
+    $(".dropdown-content").on('click', () => {
+      $("input[type='text']").val($(this).text()).focus();
+      isFilled = true;
+    });
 
 
 });
