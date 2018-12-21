@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+  font-family: 'roboto', sans-serif;
+}
+
+#suggest-dropdown{
+  .suggest-dropdown-inner{
+    padding-top: 80px;
+  }
+
+  .dropdown{
+    min-height: 40px;
+    max-height: 250px;
+    width: 100%;
+    border: 1px solid #ced4da;
+    border-top: none;
+    overflow-y: scroll;
+    display: none;
+  }
+
+  .show{
+    display: block;
+  }
+  .dropdown-content{
+    cursor: pointer;
+    display: block;
+    height: 40px;
+    padding: 10px;
+  }
+
+  .dropdown-content:hover{
+    background: #DCDCDC;
+  }
+
+  .form-control{
+    border-radius: 0px;
+  }
+}
+
+/* Custom Scrollbar created here*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #191970;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
